@@ -181,7 +181,7 @@ export default {
     That.SQAjax({
       Url: '/api/getDictionaryList',
       RequestData: {
-        parentId: 1
+        parentId: [1,2]
       },
       Success: function (data) {
         That.ArticleTagOptions = data;

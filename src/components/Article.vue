@@ -111,7 +111,7 @@ export default {
       That.SQAjax({
         Url: '/api/getDictionaryList',
         RequestData: {
-          parentId: 1
+          parentId: [1,2]
         },
         Success: function (data) {
           data.push({ id: 0, name: '全部' });
