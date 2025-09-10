@@ -3,6 +3,7 @@
     <h1 class="mainTitle">{{ $route.meta.h1 }}</h1>
     <div class="ArticleList">
       <div style="margin-bottom:10px" v-if="userRole == 'master'">
+        <el-button @click="backfillHistoryData()" plain>清空并回填日志汇总表</el-button>
         <el-button type="primary" @click="OpenCreateDialog()" plain>创建账号</el-button>
       </div>
 
@@ -166,6 +167,19 @@ export default {
         },
         Success: function (data) {
           That.getList(That.commonPage);
+        }
+      });
+    },
+    backfillHistoryData() {
+      var That = this;
+      That.SQAjax({
+        Url: '/api/backfillHistoryData',
+        RequestData: {},
+        Success: function () {
+          That.$message({
+            message: '处理成功',
+            type: 'success'
+          });
         }
       });
     }
