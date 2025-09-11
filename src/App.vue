@@ -28,7 +28,7 @@
     watch:{
       $route: {
         handler: function(val, oldVal){
-          if(this.$route.path == '/LoginPage'){
+          if(this.$route.path == '/loginPage'){
             this.TopbarShow = false;
           }else{
             this.TopbarShow = true;
