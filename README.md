@@ -1,5 +1,5 @@
 ## 🎪 CodingLife.online
->此项目为码语人生（CodingLife Online）开源网站的管理后台源码，[管理端体验地址]（https://codinglife.online/admin），[用户端体验地址](https://codinglife.online)
+>此项目为码语人生（CodingLife Online）开源网站的管理后台源码，体验地址为：[管理端](https://codinglife.online/admin)，[用户端](https://codinglife.online)
 
 码语人生（CodingLife Online）是面向开发者的技术人文社区，记录代码背后的思考、分享技术人的成长故事，在代码中见人生。
 
